@@ -40,8 +40,9 @@ header img {
 }
 
 main {
+    font-size: 1.2em;
     line-height: 1.5;
     margin: 0 auto;
     padding: 4em 1em;
-    width: 50em;
+    width: 40em;
 }

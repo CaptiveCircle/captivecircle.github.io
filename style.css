@@ -9,7 +9,6 @@ body {
 
 h1, h2 {
     margin-top: 1em;
-    padding-top: 1em;
 }
 
 h1, h2, strong {
@@ -25,8 +24,9 @@ header {
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
+    color: white;
     line-height: 1.2;
-    padding: 10vw 0;
+    padding: 5vw 0;
     text-align: center;
     width: 100%;
 }
@@ -59,7 +59,6 @@ a:hover {
 }
 
 main {
-    
     line-height: 1.5;
     margin: 0 auto;
     padding: 4em 1em;

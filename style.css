@@ -7,45 +7,62 @@ body {
     margin: 0 auto;
 }
 
-h1, h2 {
+h1, h2, h3 {
     margin-top: 1em;
 }
 
-h1, h2, strong {
+h1, h2, h3, h4, strong {
     color: #333;
+}
+
+h4 {
+    font-size: 0.8em;
 }
 
 a {
     text-decoration: none;
 }
 
-header {
+header, footer {
     background-color: #263d36;
-    background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
-    line-height: 1.2;
-    padding: 5vw 0;
     text-align: center;
     width: 100%;
 }
 
-header h1 {
+header {
+    background-position: center top;
+    line-height: 1.2;
+    padding: 5vw 0;
+}
+
+footer {
+    background-position: center bottom;
+    line-height: 0.2;
+    padding: 1vw 0;
+}
+
+header h1, footer h1 {
     color: white;
     font-size: 2.1em;
     font-weight: 300;
 }
 
-header img {
+header img, footer img {
     display: inline-block;
     height: 120px;
     vertical-align: top;
     width: 100%;
 }
 
-header a {
+header a, footer a {
     color: white;
+}
+
+footer p {
+    font-size: 0.7em;
 }
 
 a:hover {

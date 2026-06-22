@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../style.css" />
+    <title>Word Wrap Kata - Captive Circle</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/github.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+</head>
+
+<body>
+    <header style="background-image: url(../index.jpg);">
+        <h1><a href="../index.html">Captive Circle</a></h1>
+        <p>Software Craft</p>
+    </header>
+    <main>
+        <h1>Word Wrap Kata</h1>
+        <p>The Word Wrap Kata is a Test Driven Development exercise suggested by Robert C. Martin.  It is a great exercise for practising TDD as the task is simple to understand but has many edge cases to consider.  It is a beneficial exercise to try yourself, in a randori, or at a code retreat.  In this blog post I'll go through and approach to tackling the exercise.</p>
+        <p>The goal is to implement a function which breaks text into lines of a specified length.</p>
+        <p>The simplest first test to write is that of an empty string.</p>
+        <!-- TODO show first test -->
+        <!-- TODO could just return a constant, but prefer to take a meainingful step -->
+        <pre><code class="language-python">
+def word_wrap(text, columns):
+    return text
+        </code></pre>
+
+
+        <!-- 
+Word that fits
+
+Words that has to be split (but causes split word)
+
+Calculate right splitting point
+
+Multiple splits?  No, more complicated single splits before iteration/loops
+
+Find space then work backwards
+
+Split as separate function?
+
+recursion?
+
+Don’t worry about error handling, point is to dev algorithm
+
+Quite an open ended problem, hyphen words
+
+
+
+Original notes Word Wrap Kata:
+Empty string return constant of “”
+Then actual text that fits, return input value to show “do minimum to make test pass (whilst also making implementation more generic”
+Then “aa 2” to add line break
+Then choice comes, multiple line breaks, or recognising words
+Key is to recognise that it’s about finding line breaks, looping can come later
+Implementation: find space, or default.  At this point there is either one space or no space so it's simple.
+Oh what if the space is after the line break?  Let's add a test.
+Then add loop to handle multiple line breaks.
+Then show it can be done recursively
+Edge cases: checking input parameters if not strong typed language, columns should be >= 1, whitespace in input string -->
+
+        <!-- TODO publish date -->
+    </main>
+
+    <script>hljs.highlightAll();</script>
+    <footer style="background-image: url(../index.jpg);">
+        <p>© 2026 <a href="../index.html">Captive Circle</a></p>
+    </footer>
+</body>
+
+</html>
